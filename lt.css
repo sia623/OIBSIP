@@ -1,0 +1,300 @@
+@import url();
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+
+}
+body{
+    
+  background-image: url('https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=600');
+  
+
+   background-size: cover;
+  
+
+
+   
+    
+}
+
+.header{
+    background-color: #ffffff;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+   border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+z-index: 100;
+
+
+}
+
+.logo{
+
+    font-size:25px;
+    color: rgb(33, 79, 245);
+    text-decoration: none;
+    font-weight: 700;
+    border: 2px solid black;
+    border-radius: 50%;
+    transition: .3s;
+}
+.logo:hover,
+.logo.active{
+    color: aquamarine;
+}
+
+.navbar a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.938);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 45px;
+    transition: .6s;
+
+}
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(235, 146, 58);
+}
+
+.navbar a.book{
+    color: rgb(255, 254, 253);
+    margin-left: 50px;
+   font-weight: 100;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(1, 11, 23);
+    border: 2px solid rgb(5, 0, 0);
+    border-radius: 20%;
+   
+}
+
+.navbar a.book:hover{
+    color:rgb(75, 83, 248);
+}
+
+.home {
+   height: 40vh;
+display: flex;
+margin-top: 20vh;
+margin-left: 50vh;
+text-align: center;
+
+
+
+
+}
+.home-content{
+    position:absolute;
+    justify-content: center;
+    background:transparent;
+    max-width: 600px;
+
+
+}
+
+.home-content h1{
+    line-height: 1.2 ;
+    color: rgb(0, 0, 0);
+    font-size: 46px;
+    font-weight: 600;
+    font-family:cursive;
+    justify-content: center;
+    
+}
+.home-content p{
+  justify-content: center;
+    font-weight: 200;
+    font-style: italic;
+    
+}
+.home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    margin-top: 20px;
+    height: 50px;
+    margin-left: 35vh;
+    
+
+
+
+}
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+height: 100%;
+background:  rgb(125, 136, 136);
+border: 2px solid rgb(0, 0, 0);
+border-radius: 8px;
+text-decoration: none;
+font-size: 19px;
+color: rgb(38, 29, 205);
+letter-spacing: 1px;
+font-weight:600 ;
+z-index: 1;
+overflow: hidden;
+
+}
+
+
+.btn-box a::before{
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(202, 170, 121);
+    z-index: -1;
+    transition: .6s;
+
+}
+.btn-box a:hover::before{
+
+    width: 100%;
+
+
+}
+.footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
+
+    .contact-content{
+        border: 3px solid black;
+        text-align: center;
+        margin: 20px 0;
+        justify-content: center;
+        color:#000;
+    }
+    .h2{
+        text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%);
+
+
+    }
+
+    .offers{
+       background-image: url('https://img.freepik.com/free-vector/rectangle-gold-frame-with-foliage-pattern-background_53876-99796.jpg?size=626&ext=jpg&ga=GA1.1.515994675.1686414299&semt=ais');
+        border: 5px solid black;
+        background-size: cover;
+       
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px;
+        
+        display: table;
+        justify-content:center;
+   text-align: center;
+    color: black;
+    }
+    .offers .d1{
+        margin-top: 20px;
+       margin-left: 20px;
+        display: table-cell;
+        border: 2px solid rgb(17, 14, 17);
+        justify-content: center;
+        float: left;
+        text-align: center;
+    }
+    .offers .d2{
+        margin-top: 20px;
+        margin-left: 10px;
+        display: table-cell;
+        border: 2px solid rgb(6, 5, 6);
+        justify-content: center;
+        float: left;
+        text-align: center;
+    } 
+    .offers .d3{
+        margin-top: 20px;
+        margin-left: 20px;
+         display: table-cell;
+         border: 2px solid rgb(2, 1, 2);
+         justify-content: center;
+         float: left;
+         text-align: center;
+     }
+     .offers .d4{
+        margin-top: 20px;
+         margin-left: 10px;
+         display: table-cell;
+         border: 2px solid rgb(0, 0, 0);
+         justify-content: center;
+         float: left;
+         text-align: center;
+     } 
+     ul.a {justify-content: center;
+        text-align: center;
+        list-style-type: circle;
+        list-style-position: inside;
+      }
+
